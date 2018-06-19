@@ -1,5 +1,6 @@
 package entity;
 
+import java.util.List;
 import java.util.Set;
 
 import org.json.JSONArray;
@@ -20,7 +21,7 @@ public class Item {
 	/**
 	 * This is a builder pattern in Java.
 	 */
-	private Item(ItemBuilder builder) {
+	public Item(ItemBuilder builder) {
 		this.itemId = builder.itemId;
 		this.name = builder.name;
 		this.rating = builder.rating;
